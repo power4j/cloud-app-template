@@ -1,0 +1,32 @@
+server:
+  port: 18080
+
+
+spring:
+  profiles:
+    active: ${SPRING_PROFILES:config-server-nacos}
+  application:
+    name: gateway
+  cloud:
+    nacos:
+      username: ${NACOS_USER:nacos}
+      password: ${NACOS_PWD:nacos}
+      discovery:
+        server-addr: ${NACOS_HOST:127.0.0.1}:${NACOS_PORT:8848}
+        namespace: ${NACOS_NAMESPACE:public}
+        group: ${NACOS_GROUP:DEFAULT_GROUP}
+
+---
+spring:
+  config:
+    activate:
+      on-profile: config-server-nacos
+    import:
+      - nacos:application.yml
+      - nacos:${spring.application.name}.yml
+  cloud:
+    nacos:
+      config:
+        server-addr: ${spring.cloud.nacos.discovery.server-addr}
+        group: ${NACOS_GROUP:DEFAULT_GROUP}
+        namespace: ${NACOS_NAMESPACE:public}
