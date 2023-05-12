@@ -158,7 +158,7 @@
             <groupId>org.slf4j</groupId>
           </exclusion>
         </exclusions>
-        <version>2.4.0</version>
+        <version>3.0.6</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
