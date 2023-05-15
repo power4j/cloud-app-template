@@ -58,7 +58,7 @@
     <spring-security-jwt.version>1.0.11.RELEASE</spring-security-jwt.version>
     <excel-spring-boot-starter.version>1.2.7</excel-spring-boot-starter.version>
     <!-- jdbc -->
-    <openguass.version>3.1.1-og</openguass.version>
+    <openguass.version>5.0.0-og</openguass.version>
 
     <spock-lib.version>2.3-groovy-4.0</spock-lib.version>
     <!-- plugin -->
