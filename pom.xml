@@ -44,7 +44,7 @@
     <spring-cloud.version>2021.0.5</spring-cloud.version>
     <spring-cloud-alibaba.version>2021.0.4.0</spring-cloud-alibaba.version>
 
-    <bcprov.version>1.70</bcprov.version>
+    <bcprov.version>1.75</bcprov.version>
     <dinger.version>1.2.1</dinger.version>
     <logbook.version>2.14.0</logbook.version>
     <druid.version>1.2.16</druid.version>
